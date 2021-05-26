@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #333642;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr 1fr auto;
+}
+
+.pen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:  .8rem 1.5rem;
+    align-items: center;
+    background-color: #1E1F26;
+}
+
+.pen__details {
+    color: white;
+}
+
+.pen__buttons {
+        justify-self: end;
+        align-self: stretch;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 10px;
+}
+
+.button {
+    /* display: inline-block; */
+    height: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333642;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* --------------------- Code Section --------------------- */
+
+.editors {
+    background-color: #393D4A;
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding-left: 20px;
+}
+.editor {
+    display: grid;
+    grid-template-rows: auto 1fr 15px;
+}
+.editor__header {
+    background-color: #1A1B1F;
+    color: white;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+}
+.editor__text {
+    background-color:#1d1e22;
+}
+
+.cog-icon {
+    color: #fff;
+    background-color: #393D4A;
+    padding: 5px 6px;
+    margin-right: 5px;
+}
+
+
+/*----------------------- Display section --------------------------- */
+.display {
+    background-color: #393D4A;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------------------ Footer ------------------- */
+.setting {
+    background-color: #1d1e22;
+}
+.setting__link {
+    display: inline-block;
+    padding: 10px 15px;
+}
